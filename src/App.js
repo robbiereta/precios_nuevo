@@ -1,23 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import axios from "axios"
+import { useState, useEffect } from "react";
+import lista from "./carabela_nov22.json";
+
 
 function App() {
+
+  //save axios  response to state
+  let [data, setData] = useState([]);
+
+  // The useEffect() hook fires any time that the component is rendered.
+  // An empty array is passed as the second argument so that the effect only fires once.
+  
+  
+  useEffect(() => {
+    setData(lista);
+  },[]);
+console.log(data);
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
     </div>
   );
 }
