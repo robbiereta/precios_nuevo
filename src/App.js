@@ -1,9 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
 import axios from "axios"
 import { useState, useEffect } from "react";
 import lista from "./carabela_nov22.json";
-
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
+import "./styles.css";
+import { MDBDataTable } from "mdbreact";
 
 function App() {
 
