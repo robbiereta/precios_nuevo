@@ -1,4 +1,3 @@
-import axios from "axios"
 import { useState, useEffect } from "react";
 import lista from "./kuraz2.json";
 import "@fortawesome/fontawesome-free/css/all.min.css";
