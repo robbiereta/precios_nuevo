@@ -1,16 +1,15 @@
 import axios from "axios"
 import { useState, useEffect } from "react";
-import lista from "./carabela_nov22.json";
+import lista from "./kuraz2.json";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
-import "./styles.css";
 import { MDBDataTable } from "mdbreact";
 
 function App() {
 
   //save axios  response to state
-  let [data, setData] = useState([]);
+  let [data2, setData] = useState([]);
 
   // The useEffect() hook fires any time that the component is rendered.
   // An empty array is passed as the second argument so that the effect only fires once.
@@ -19,11 +18,56 @@ function App() {
   useEffect(() => {
     setData(lista);
   },[]);
-console.log(data);
-  
+console.log(data2);
+const data = {
+  columns: [
+    {
+      label: "Codigo",
+      field: "Codigo",
+      sort: "asc",
+      width: 150
+    },
+    {
+      label: "Descripcion",
+      field: "Descripcion",
+      sort: "asc",
+      width: 150
+    },
+    {
+      label: "Marca",
+      field: "Marca",
+      sort: "asc",
+      width: 150
+    },
+    {
+      label: "Moto",
+      field: "MOTO",
+      sort: "asc",
+      width: 150
+    },
+    {
+      label: "Existencia",
+      field: "Existencia",
+      sort: "asc",
+      width: 150
+    },
+    {
+      label: "Precio",
+      field: "Precio",
+      sort: "asc",
+      width: 150
+      
+    }
+  ],
+  rows: data2.lista
+};
+
+
   return (
     <div className="App">
-      
+    <h1>Kurazai</h1>
+    <MDBDataTable striped bordered hover data={data} />
+  
     </div>
   );
 }
