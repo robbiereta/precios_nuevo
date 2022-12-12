@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import lista from "./kuraz2.json";
+import lista from "./kuraz.json";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
@@ -64,7 +64,8 @@ const data = {
 
   return (
     <div className="App">
-    <h1>Kurazai</h1>
+    <h1>Carabela,Kurazai,Islo</h1>
+    <h3>Lista de diciembre 2022</h3>
     <MDBDataTable striped bordered hover data={data} />
   
     </div>
