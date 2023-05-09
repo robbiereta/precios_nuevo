@@ -16,9 +16,7 @@ function App() {
     setData(lista);
   }, []);
 
-for (let i = 0, len = data2.length; i < len; i++) {
-  console.log(data2[i].G)
-}
+
   
   const data = {
     columns: [
