@@ -52,7 +52,7 @@ function App() {
       },
       {
         label: "Precio",
-        field: "G",
+        field: "K",
         sort: "asc",
         width: 150,
       },
@@ -62,8 +62,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Carabela,Kurazai,Islo,BDS</h1>
-      <h3>Lista de Mayo 2023</h3>
+      <h1>Carabela,Kurazai,Islo,BDS,Motomel</h1>
+      <h3>Lista de Abril 2023</h3>
       <MDBDataTable striped bordered hover data={data} />
     </div>
   );
