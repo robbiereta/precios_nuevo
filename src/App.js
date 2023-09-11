@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import lista from "./kur.json";
+import lista from "./lista.json";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
@@ -22,48 +22,35 @@ function App() {
     columns: [
       {
         label: "Codigo",
-        field: "B",
+        field: "A",
         sort: "asc",
         width: 150,
       },
       {
         label: "Descripcion",
-        field: "C",
-        sort: "asc",
-        width: 150,
-      },
-      {
-        label: "Marca",
-        field: "E",
-        sort: "asc",
-        width: 150,
-      },
-      {
-        label: "Moto",
-        field: "D",
-        sort: "asc",
-        width: 150,
-      },
-      {
-        label: "Existencia",
-        field: "H",
+        field: "B",
         sort: "asc",
         width: 150,
       },
       {
         label: "Precio",
-        field: "K",
+        field: "D",
         sort: "asc",
         width: 150,
       },
+      {
+        label: "Ubicacion",
+        field: "F",
+        sort: "asc",
+        width: 150,
+      }
     ],
     rows: data2.lista,
   };
 
   return (
     <div className="App">
-      <h1>Carabela,Kurazai,Islo,BDS,Motomel</h1>
-      <h3>Lista de Abril 2023</h3>
+      <h1>Mastermoto</h1>
       <MDBDataTable striped bordered hover data={data} />
     </div>
   );
