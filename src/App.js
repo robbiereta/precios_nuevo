@@ -31,19 +31,8 @@ function App() {
         field: "B",
         sort: "asc",
         width: 150,
-      },
-      {
-        label: "Precio",
-        field: "D",
-        sort: "asc",
-        width: 150,
-      },
-      {
-        label: "Ubicacion",
-        field: "F",
-        sort: "asc",
-        width: 150,
       }
+      
     ],
     rows: data2.lista,
   };
