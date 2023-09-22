@@ -7,36 +7,42 @@ import axios from "axios";
 
 
 
-func
+function App() {
 
-tion App() {
+
   //save axios  response to state
   let [data, setData] = useState([]);
 
-  let config = {
-    method: 'get',
-    maxBodyLength: Infinity,
-    url: 'https://a-d9z9.onrender.com/precios',
-    headers: { }
-  };
+
   
-  axios.request(config)
-  .then((response) => {
-    console.log(JSON.stringify(response.data));
-    let lista=response.data; 
+  function getData(){
+  
+    let config = {
+      method: 'get',
+      maxBodyLength: Infinity,
+      url: 'https://a-d9z9.onrender.com/precios',
+      headers: { }
+    };
     
- 
-  })
-  .catch((error) => {
-    console.log(error);
-  });
-  
+    axios.request(config)
+    .then((response) => {
+      console.log(JSON.stringify(response.data));
+      let lista=response.data; 
+      return lista
+   
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+    
+  }
 
 
   // The useEffect() hook fires any time that the component is rendered.
   // An empty array is passed as the second argument so that the effect only fires once.
 
   useEffect(() => {
+    let lista = getData();
     setData(lista);
   }, []);
 
@@ -46,7 +52,7 @@ tion App() {
     columns: [
       {
         label: "Codigo",
-        field: "A",
+        field: "C",
         sort: "asc",
         width: 150,
       },
@@ -69,7 +75,7 @@ tion App() {
         width: 150,
       }
     ],
-    rows: data.lista,
+    rows: data,
   };
 
   return (
