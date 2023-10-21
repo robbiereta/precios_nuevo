@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="App">
       <h1>Refacciones</h1>
-      <MDBDataTable striped bordered hover data={cols} />
+      <MDBDataTable striped bordered hover data={data} />
     </div>
   );
 }
