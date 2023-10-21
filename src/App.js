@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Precios</h1>
+      <h1>Refacciones</h1>
       <MDBDataTable striped bordered hover data={cols} />
     </div>
   );
