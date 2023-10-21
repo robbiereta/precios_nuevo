@@ -39,8 +39,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Mastermoto</h1>
-      <MDBDataTable striped bordered hover data={data} />
+      <h1>Precios</h1>
+      <MDBDataTable striped bordered hover data={cols} />
     </div>
   );
 }
