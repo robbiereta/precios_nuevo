@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import lista from "./lista.json";
+import lista from "./lista_mayoreo.json";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
@@ -32,7 +32,13 @@ function App() {
         sort: "asc",
         width: 150,
       }
-      
+      ,
+      {
+        label: "Precio",
+        field: "mayoreo",
+        sort: "asc",
+        width: 270,
+      }
     ],
     rows: data2.lista,
   };
