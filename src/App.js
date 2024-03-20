@@ -52,7 +52,7 @@ function App() {
       },
       {
         label: "Precio",
-        field: "K",
+        field: "G",
         sort: "asc",
         width: 150,
       },
