@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import lista from "./kur.json";
+import lista from "./kur_abr24.json";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
@@ -52,7 +52,7 @@ function App() {
       },
       {
         label: "Precio",
-        field: "G",
+        field: "K",
         sort: "asc",
         width: 150,
       },
@@ -63,7 +63,7 @@ function App() {
   return (
     <div className="App">
       <h1>Carabela,Kurazai,Islo,BDS,Motomel</h1>
-      <h3>Lista de Marzo 2024</h3>
+      <h3>Lista de Abril 2024</h3>
       <MDBDataTable striped bordered hover data={data} />
     </div>
   );
